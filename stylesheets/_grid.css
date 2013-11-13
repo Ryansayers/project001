@@ -1,0 +1,40 @@
+/* total with of page */
+/* number of columns */
+/* margin between columns */
+/* math magic */
+/* the last column in a row needs this */
+/* prepend n blank columns  */
+/* append n blank columns */
+/* test this out */
+/* line 50, ../sass/_grid.scss */
+.gridrow {
+  display: block;
+  width: 90%;
+  /* replace with display: inline-block; */ }
+
+/* line 53, ../sass/_grid.scss */
+.gridrow .main {
+  float: left;
+  width: 6.58333%;
+  margin-right: 1%;
+  height: 100px;
+  background: red; }
+
+/* line 56, ../sass/_grid.scss */
+.gridrow .sidebar {
+  float: left;
+  width: 74.83333%;
+  margin-right: 1%;
+  height: 100px;
+  background: yellow; }
+
+/* line 59, ../sass/_grid.scss */
+.gridrow .promo {
+  height: 100px;
+  background: green;
+  float: left;
+  width: 6.58333%;
+  margin-right: 1%;
+  /*@include prepend(1); */
+  /*@include append(4); */
+  margin-right: 0; }

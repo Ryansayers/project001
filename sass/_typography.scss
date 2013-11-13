@@ -1,0 +1,66 @@
+$base-font-size: 16px;
+$base-line-height: 22px;
+@include establish-baseline;
+
+
+
+
+
+@font-face {
+  font-family: "Source Sans";
+  src: url("../fonts/SourceSansPro-Regular.otf");
+}
+@font-face {
+  font-family: "Source Sans";
+  src: url("../fonts/SourceSansPro-Light.otf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Source Sans";
+  src: url("../fonts/SourceSansPro-Semibold.otf");
+  font-weight: 600;
+} 
+
+
+/* resets ------------------------------------------------------------ */
+
+body{
+  font-family: "Helvetica", Arial, Sans-serif; 
+}
+
+p {
+	margin-top:0.5em;
+	margin-bottom: 0.5em;
+	font-size: 1em
+}
+
+h1,h2,h3,h4,h5 {
+	margin-top:0.5em;
+	margin-bottom: 0.5em;
+  color: $dark-grey;
+}
+
+
+
+.title-large {
+  @include adjust-font-size-to(32px);
+  font-weight: 600;
+    font-family: 'Source Sans',sans-serif;
+}
+
+.title-medium-light {
+  @include adjust-font-size-to(21px);
+    font-weight: 200;
+    font-family: 'Source Sans',sans-serif;
+    color: $light-grey;
+}
+
+.title-small {
+  @include adjust-font-size-to(21px); 
+}
+
+.text-highlight {
+  color: $light-grey;
+}
+
+

@@ -1,0 +1,158 @@
+/* copy styles from base css */
+/* line 61, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%; }
+
+/* line 64, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.375em; }
+
+/* line 61, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%; }
+
+/* line 64, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.375em; }
+
+@font-face {
+  font-family: "Source Sans";
+  src: url("../fonts/SourceSansPro-Regular.otf"); }
+
+@font-face {
+  font-family: "Source Sans";
+  src: url("../fonts/SourceSansPro-Light.otf");
+  font-weight: 200; }
+
+@font-face {
+  font-family: "Source Sans";
+  src: url("../fonts/SourceSansPro-Semibold.otf");
+  font-weight: 600; }
+
+/* resets ------------------------------------------------------------ */
+/* line 27, ../sass/_typography.scss */
+body {
+  font-family: "Helvetica", Arial, Sans-serif; }
+
+/* line 31, ../sass/_typography.scss */
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 1em; }
+
+/* line 37, ../sass/_typography.scss */
+h1, h2, h3, h4, h5 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  color: #333333; }
+
+/* line 45, ../sass/_typography.scss */
+.title-large {
+  font-size: 2em;
+  line-height: 1.375em;
+  font-weight: 600;
+  font-family: 'Source Sans',sans-serif; }
+
+/* line 51, ../sass/_typography.scss */
+.title-medium-light {
+  font-size: 1.3125em;
+  line-height: 2.09524em;
+  font-weight: 200;
+  font-family: 'Source Sans',sans-serif;
+  color: #666666; }
+
+/* line 58, ../sass/_typography.scss */
+.title-small {
+  font-size: 1.3125em;
+  line-height: 2.09524em; }
+
+/* line 62, ../sass/_typography.scss */
+.text-highlight {
+  color: #666666; }
+
+/* using tap event on li's so the whole area is clickable */
+/* line 5, ../sass/_listing.scss */
+.list .audio-list-item {
+  width: 320px;
+  /* temp just for now */
+  border-bottom: 1px solid #cdcdcd;
+  padding: 0.5em 0.3em 1em 0.3em; }
+/* line 10, ../sass/_listing.scss */
+.list :last-child {
+  border-bottom: none; }
+/* line 14, ../sass/_listing.scss */
+.list .carousel-item {
+  width: 320px;
+  /* temp just for now */
+  float: left;
+  margin: 0 1em;
+  border-bottom: none;
+  /* use @extend to build course list & lesson list */ }
+  /* line 19, ../sass/_listing.scss */
+  .list .carousel-item .title-medium-light {
+    margin-top: -0.5em; }
+
+/* classes can be reused as they are separated out */
+/* line 32, ../sass/_listing.scss */
+.ui-audio-button-inline {
+  width: 12.90323%;
+  float: left;
+  margin-right: 1.6129%;
+  display: inline;
+  margin-top: 25px;
+  /* change to em */ }
+
+/* line 1, ../sass/_buttons.scss */
+.mini-audio-player-control {
+  width: 35px;
+  height: 30px;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: #636363 url("../images/volume.svg") 10px 9px no-repeat; }
+
+@font-face {
+  font-family: "Source Sans";
+  src: url("../fonts/SourceSansPro-Regular.otf"); }
+
+@font-face {
+  font-family: "Source Sans";
+  src: url("../fonts/SourceSansPro-Light.otf");
+  font-weight: 200; }
+
+@font-face {
+  font-family: "Source Sans";
+  src: url("../fonts/SourceSansPro-Semibold.otf");
+  font-weight: 600; }
+
+/* resets ------------------------------------------------------------ */
+/* line 53, ../sass/_main.scss */
+.visibility {
+  display: none; }
+
+/* line 57, ../sass/_main.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 64, ../sass/_main.scss */
+html {
+  margin: 0;
+  position: relative;
+  padding: 0;
+  height: 100%; }
+
+/* line 71, ../sass/_main.scss */
+body {
+  background: #dfe2e2;
+  margin: 0;
+  position: relative;
+  padding: 50px;
+  height: 100%;
+  background: #fefef6; }

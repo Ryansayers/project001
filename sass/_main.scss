@@ -1,0 +1,80 @@
+@import 'compass';	
+@import 'susy';
+
+
+// Grid Settings
+
+$total-columns  : 5;
+$column-width   : 4em;
+$gutter-width   : 0.5em;
+$grid-padding   : $gutter-width;
+
+
+// UI color Settings
+
+$background-color : #fefef6;
+$default-border-radius : 3px;
+$mini-audio-player-color: #636363;
+
+// text color settings
+/* copy styles from base css */
+
+$dark-grey : #333;
+$light-grey : #666;
+
+
+$base-font-size: 16px;
+$base-line-height: 22px;
+@include establish-baseline;
+
+
+@import 'typography';
+@import 'listing';  
+@import 'buttons';
+
+
+@font-face {
+  font-family: "Source Sans";
+  src: url("../fonts/SourceSansPro-Regular.otf");
+}
+@font-face {
+  font-family: "Source Sans";
+  src: url("../fonts/SourceSansPro-Light.otf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Source Sans";
+  src: url("../fonts/SourceSansPro-Semibold.otf");
+  font-weight: 600;
+} 
+
+
+/* resets ------------------------------------------------------------ */
+.visibility {
+	display: none;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding:0; 
+}
+
+
+html {
+  margin:0; 
+  position: relative;
+  padding:0;
+  height: 100%;
+
+}
+body {
+  background: #dfe2e2;
+  margin:0;
+  position: relative;
+  padding:50px;
+  height: 100%;
+  background: $background-color;
+}
+
+

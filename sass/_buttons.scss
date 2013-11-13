@@ -1,0 +1,7 @@
+.mini-audio-player-control {
+  width: 35px;
+  height: 30px;
+  border: none;
+  @include border-radius();
+  background: $mini-audio-player-color url("../images/volume.svg") 10px 9px no-repeat;
+}

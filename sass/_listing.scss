@@ -1,0 +1,43 @@
+
+/* using tap event on li's so the whole area is clickable */
+
+.list  {
+	.audio-list-item {
+		width:320px; /* temp just for now */
+		border-bottom: 1px solid #cdcdcd;
+		padding:0.5em 0.3em 1em 0.3em;
+	}
+	 & :last-child {
+		 border-bottom: none;
+	 }
+
+ 	.carousel-item {
+		width:320px; /* temp just for now */
+	 	float: left;
+	 	margin: 0 1em;
+	 	border-bottom: none;
+		.title-medium-light {
+		 margin-top:-0.5em;
+		}
+
+		/* use @extend to build course list & lesson list */
+	}
+
+}
+
+
+
+/* classes can be reused as they are separated out */
+
+.ui-audio-button-inline {
+	 @include span-columns(1,7);
+	 margin-top: 25px;  /* change to em */
+}
+
+
+
+
+
+
+
+

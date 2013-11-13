@@ -1,0 +1,76 @@
+$width: 90%;   /* total with of page */
+$columns: 24;    /* number of columns */
+$col_margin: 1%;  /* margin between columns */
+
+/* math magic */
+$col_width: ($width - ($col_margin * ($columns - 1))) / $columns;
+$col_total_width: $col_width + $col_margin;  
+
+
+@mixin row() {
+  display: block;
+  width: $width;
+  /* replace with display: inline-block; */
+}
+
+@mixin col($n: 1) {
+  float: left;
+  @include span($n);
+}
+
+
+@mixin span($n: 1) {
+  width: ($n * $col_width) + (($n - 1) * $col_margin);
+  @if $n == $columns {
+    margin-right: 0;
+  } @else {
+    margin-right: $col_margin;
+  }
+}
+
+
+/* the last column in a row needs this */
+@mixin last() {
+  margin-right: 0;
+}
+
+/* prepend n blank columns  */
+@mixin prepend($n: 1) {
+  margin-left: $col_total_width * $n
+}
+
+/* append n blank columns */
+@mixin append($n: 1) {
+  margin-right: $col_total_width * $n + $col_margin
+}
+
+
+/* test this out */
+
+.gridrow {@include row;}
+
+
+.gridrow .main { 
+  @include col(2); height: 100px; background: red;
+}
+.gridrow .sidebar { 
+  @include col(20); height: 100px; background: yellow;
+}
+.gridrow .promo { 
+  height: 100px; background: green;
+  @include col(2); 
+  /*@include prepend(1); */
+  /*@include append(4); */
+  @include last;
+}
+
+@media screen and (min-width: 650px) {
+
+}
+@media screen and (min-width: 880px) {
+
+}
+@media screen and (min-width: 940px) {
+
+}
+
